@@ -36,16 +36,43 @@ A single summary query producing a complete data quality report across
 all key metrics.
 
 ## Key Findings
+
+### Data Completeness
 | Issue | Field | Impact |
 |---|---|---|
 | 96.86% missing | Weight | Not fit for analysis |
 | 49.08% missing | Medical Specialty | Use with caution |
 | 39.56% missing | Payer Code | Use with caution |
 | 2.23% missing | Race | Flag for equity analysis |
-| 74.8% Caucasian | Race | Significant demographic skew |
 | 3 records | Gender | Invalid values flagged |
+
+### Data Validity
+| Issue | Field | Impact |
+|---|---|---|
 | 97 records | Medications | High outliers (>60) flagged |
 | 1 patient | Patient ID 88785891 | 40 encounters — high utilization outlier |
+
+### Data Integrity
+| Issue | Finding | Impact |
+|---|---|---|
+| Repeat encounters | 30,248 of 101,766 encounters are return visits | Patient vs encounter level analysis requires careful handling |
+| Age-stay correlation | Average hospital stay increases consistently with age | Confirms expected clinical pattern — supports dataset integrity |
+
+### Representativeness Bias — Critical Finding
+| Issue | Finding | Impact |
+|---|---|---|
+| Demographic skew | 74.8% Caucasian representation | Inconsistent with known diabetes epidemiology |
+| Underrepresented populations | Hispanic 2.0%, Asian 0.6% | Disproportionately low given higher diabetes prevalence in these groups |
+| Unknown race | 2,273 records (2.23%) | May further mask minority representation |
+
+**Analyst Note:** Demographic analysis reveals significant racial skew inconsistent 
+with known diabetes epidemiology, where minority populations — particularly 
+African American and Hispanic patients — have disproportionately higher rates 
+of diabetes than Caucasians. This dataset is flagged for representativeness bias. 
+Any predictive models, clinical analyses, or policy recommendations derived from 
+this dataset should be interpreted with caution regarding applicability to minority 
+diabetic populations. This finding is particularly relevant in the context of 
+healthcare equity initiatives and AI fairness requirements.
 
 ## Skills Demonstrated
 - MySQL database creation and data loading
@@ -54,6 +81,14 @@ all key metrics.
 - Outlier identification and contextual clinical assessment
 - SQL view creation for data cleaning best practices
 - Data quality scorecard reporting
+
+- ## Analytical Observations
+This project demonstrates data quality analysis beyond technical validation 
+into clinical and ethical dimensions. The representativeness bias finding 
+reflects awareness of emerging healthcare data quality standards around 
+demographic completeness, health equity, and AI fairness — increasingly 
+critical considerations for organizations using clinical data for 
+decision-making and predictive modeling.
 
 ## Background Context
 This project was completed as part of a portfolio development effort 
