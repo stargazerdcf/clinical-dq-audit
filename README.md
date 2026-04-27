@@ -1,13 +1,16 @@
 # Clinical Data Quality Audit
 ### MySQL | Healthcare Data | Data Quality Analysis
 
-## Project Overview
-A complete data quality audit of the Diabetes 130-US Hospitals dataset — 
-a real 10-year clinical dataset covering 101,766 patient encounters across 
-130 US hospitals from 1999-2008.
+## Overview
+This repository contains two portfolio projects targeting Data Quality Analyst 
+roles in healthcare and clinical research environments. Together they demonstrate 
+both technical data quality skills and governance policy knowledge — covering the 
+full spectrum from hands-on SQL analysis to organizational data governance design.
 
-This project demonstrates core Data Quality Analyst skills including data 
-profiling, validation, cleaning, and scorecard reporting using MySQL.
+**Background:** 20+ years of experience in FDA-regulated preclinical research 
+including GLP compliance, data review, computerized systems validation, and 
+SAS programming. Currently targeting remote Data Quality Analyst roles in 
+healthcare and clinical data sectors.
 
 ## Dataset
 - **Source**: UCI Machine Learning Repository / Kaggle
@@ -74,13 +77,38 @@ this dataset should be interpreted with caution regarding applicability to minor
 diabetic populations. This finding is particularly relevant in the context of 
 healthcare equity initiatives and AI fairness requirements.
 
+## Portfolio Projects
+
+### Project 1: Clinical Data Quality Audit
+**Tools:** MySQL 9.6 | Power BI | GitHub
+
+A complete 4-phase data quality audit of the Diabetes 130-US Hospitals dataset — 101,766 patient encounters across 130 US hospitals from 1999-2008. Demonstrates end-to-end data quality analyst workflow from raw data profiling through validated output and executive dashboard.
+
+**Key files:** `clinical_dq_audit.sql` | `clinical_dq_dashboard.pdf`
+
+---
+
+### Project 2: Data Governance Policy Document
+**Tools:** Microsoft Word | Regulatory Frameworks: GLP, 21 CFR Part 11, HIPAA, ALCOA+
+
+A comprehensive operational data governance policy written for a fictional Clinical Research Organization (Apex CRO). Designed as a staff-facing, regulatory-grade document covering roles and responsibilities, data quality standards, issue escalation procedures, data classification, and audit requirements.
+
+**Key file:** `Apex_CRO_Data_Governance_Policy_v1.0.docx`
+
+---
+
 ## Skills Demonstrated
-- MySQL database creation and data loading
-- Clinical data profiling and exploration
-- Missing value detection including non-standard placeholders (?)
-- Outlier identification and contextual clinical assessment
-- SQL view creation for data cleaning best practices
-- Data quality scorecard reporting
+- MySQL database design and data loading
+- SQL data profiling, validation, and cleaning
+- ETL pipeline design using SQL views and CASE logic
+- Clinical data quality analysis across 4 phases
+- Power BI dashboard development and data visualization
+- Data governance framework design
+- Regulatory compliance knowledge: GLP, 21 CFR Part 11, HIPAA, ALCOA+
+- DAMA/DMBOK data governance concepts
+- Representativeness bias identification in clinical datasets
+- GitHub version control and project documentation
+- Technical writing for regulated environments
 
 - ## Analytical Observations
 This project demonstrates data quality analysis beyond technical validation 
