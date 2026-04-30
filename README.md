@@ -76,6 +76,11 @@ Any predictive models, clinical analyses, or policy recommendations derived from
 this dataset should be interpreted with caution regarding applicability to minority 
 diabetic populations. This finding is particularly relevant in the context of 
 healthcare equity initiatives and AI fairness requirements.
+**Additional finding:** Summation of unique patients by race category yields 
+71,770 against a total unique patient count of 71,518 — indicating approximately 
+252 patients have inconsistent race values recorded across multiple encounters. 
+This suggests data entry inconsistency at the point of care and should be 
+investigated before race is used as an analytical variable.
 
 ## Portfolio Projects
 
